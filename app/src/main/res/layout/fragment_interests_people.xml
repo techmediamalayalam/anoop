@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="interestsPeopleVM" type="com.livechat.app.modules.interestspeople.data.viewmodel.InterestsPeopleVM"/>
+    </data>
+    <ScrollView android:clipToPadding="false"
+        android:fillViewport="true" android:id="@+id/scrollView"
+        android:layout_height="match_parent" android:layout_width="match_parent">
+        <LinearLayout android:id="@+id/linear"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent" android:orientation="vertical">
+            <TextView android:gravity="top|start"
+                android:id="@+id/txtSeeAllPeople"
+                android:layout_gravity="start"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_28pxh"
+                android:layout_marginStart="@dimen/_28pxh"
+                android:layout_width="match_parent"
+                android:text="@{interestsPeopleVM.interestsPeopleModel.txtSeeAllPeople}"
+                style="@style/textStylePoppinssemibold14" tools:text="@string/msg_see_all_people"/>
+            <TextView android:gravity="top|start"
+                android:id="@+id/txtMorePeopleTo"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_19pxv"
+                android:layout_width="match_parent"
+                android:paddingBottom="@dimen/_11pxv"
+                android:paddingStart="@dimen/_28pxh"
+                android:paddingTop="@dimen/_12pxv"
+                android:text="@{interestsPeopleVM.interestsPeopleModel.txtMorePeopleTo}"
+                style="@style/textStylePoppinssemibold14_1" tools:text="@string/msg_more_people_to"/>
+            <LinearLayout android:id="@+id/linear1"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_28pxh"
+                android:layout_marginStart="@dimen/_28pxh"
+                android:layout_marginTop="@dimen/_24pxv"
+                android:layout_width="match_parent"
+                android:orientation="vertical" style="@style/groupStyle">
+                <LinearLayout android:id="@+id/linear2"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal" style="@style/groupStyle">
+                    <ImageView android:id="@+id/image"
+                        android:layout_gravity="center_vertical"
+                        android:layout_height="@dimen/_60pxv"
+                        android:layout_width="@dimen/_60pxh"
+                        android:scaleType="centerCrop"
+                        circular="@{true}"
+                        imageRes="@{@drawable/img_profile_picture}" tools:src="@drawable/img_profile_picture"/>
+                    <LinearLayout android:id="@+id/linear3"
+                        android:layout_gravity="center_vertical"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_15pxh"
+                        android:layout_weight="0.5"
+                        android:layout_width="0dp"
+                        android:orientation="vertical" style="@style/groupStyle">
+                        <TextView android:gravity="top|start"
+                            android:id="@+id/txtJohnDoe"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            android:text="@{interestsPeopleVM.interestsPeopleModel.txtJohnDoe}"
+                            style="@style/textStylePoppinssemibold16" tools:text="@string/lbl_john_doe"/>
+                        <TextView android:gravity="top|start"
+                            android:id="@+id/txtLoremIpsumIs"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_3pxv"
+                            android:layout_width="match_parent"
+                            android:text="@{interestsPeopleVM.interestsPeopleModel.txtLoremIpsumIs}"
+                            style="@style/textStylePoppinsregular12_1" tools:text="@string/msg_lorem_ipsum_is"/>
+                    </LinearLayout>
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:gravity="center"
+                        android:id="@+id/btnFollow"
+                        android:layout_gravity="top"
+                        android:layout_height="@dimen/_32pxv"
+                        android:layout_marginStart="@dimen/_11pxh"
+                        android:layout_width="@dimen/_87pxh"
+                        android:text="@string/lbl_follow"
+                        android:textAllCaps="false"
+                        style="@style/textStylePoppinsregular14_2" tools:text="@string/lbl_follow"/>
+                </LinearLayout>
+                <View android:background="@color/gray_400"
+                    android:id="@+id/line"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="@dimen/_1pxv"
+                    android:layout_marginTop="@dimen/_25pxv" android:layout_width="@dimen/_319pxh"/>
+                <LinearLayout android:id="@+id/linear4"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_24pxv"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal" style="@style/groupStyle">
+                    <ImageView android:id="@+id/image1"
+                        android:layout_gravity="center_vertical"
+                        android:layout_height="@dimen/_60pxv"
+                        android:layout_width="@dimen/_60pxh"
+                        android:scaleType="centerCrop"
+                        circular="@{true}"
+                        imageRes="@{@drawable/img_profile_picture}" tools:src="@drawable/img_profile_picture"/>
+                    <LinearLayout android:id="@+id/linear5"
+                        android:layout_gravity="center_vertical"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_15pxh"
+                        android:layout_weight="0.5"
+                        android:layout_width="0dp"
+                        android:orientation="vertical" style="@style/groupStyle">
+                        <TextView android:gravity="top|start"
+                            android:id="@+id/txtJohnDoe1"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            android:text="@{interestsPeopleVM.interestsPeopleModel.txtJohnDoe1}"
+                            style="@style/textStylePoppinssemibold16" tools:text="@string/lbl_john_doe"/>
+                        <TextView android:gravity="top|start"
+                            android:id="@+id/txtLoremIpsumIs2"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_3pxv"
+                            android:layout_width="match_parent"
+                            android:text="@{interestsPeopleVM.interestsPeopleModel.txtLoremIpsumIs2}"
+                            style="@style/textStylePoppinsregular12_1" tools:text="@string/msg_lorem_ipsum_is2"/>
+                    </LinearLayout>
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:gravity="center"
+                        android:id="@+id/btnFollow1"
+                        android:layout_gravity="top"
+                        android:layout_height="@dimen/_32pxv"
+                        android:layout_marginStart="@dimen/_11pxh"
+                        android:layout_width="@dimen/_87pxh"
+                        android:text="@string/lbl_follow"
+                        android:textAllCaps="false"
+                        style="@style/textStylePoppinsregular14_2" tools:text="@string/lbl_follow"/>
+                </LinearLayout>
+                <View android:background="@color/gray_400"
+                    android:id="@+id/line1"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="@dimen/_1pxv"
+                    android:layout_marginTop="@dimen/_25pxv" android:layout_width="@dimen/_319pxh"/>
+                <LinearLayout android:id="@+id/linear6"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_24pxv"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal" style="@style/groupStyle">
+                    <ImageView android:id="@+id/image2"
+                        android:layout_gravity="center_vertical"
+                        android:layout_height="@dimen/_60pxv"
+                        android:layout_width="@dimen/_60pxh"
+                        android:scaleType="centerCrop"
+                        circular="@{true}"
+                        imageRes="@{@drawable/img_profile_picture}" tools:src="@drawable/img_profile_picture"/>
+                    <LinearLayout android:id="@+id/linear7"
+                        android:layout_gravity="center_vertical"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_15pxh"
+                        android:layout_weight="0.5"
+                        android:layout_width="0dp"
+                        android:orientation="vertical" style="@style/groupStyle">
+                        <TextView android:gravity="top|start"
+                            android:id="@+id/txtJohnDoe2"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            android:text="@{interestsPeopleVM.interestsPeopleModel.txtJohnDoe2}"
+                            style="@style/textStylePoppinssemibold16" tools:text="@string/lbl_john_doe"/>
+                        <TextView android:gravity="top|start"
+                            android:id="@+id/txtLoremIpsumIs3"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_3pxv"
+                            android:layout_width="match_parent"
+                            android:text="@{interestsPeopleVM.interestsPeopleModel.txtLoremIpsumIs3}"
+                            style="@style/textStylePoppinsregular12_1" tools:text="@string/msg_lorem_ipsum_is3"/>
+                    </LinearLayout>
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:gravity="center"
+                        android:id="@+id/btnFollow2"
+                        android:layout_gravity="top"
+                        android:layout_height="@dimen/_32pxv"
+                        android:layout_marginStart="@dimen/_11pxh"
+                        android:layout_width="@dimen/_87pxh"
+                        android:text="@string/lbl_follow"
+                        android:textAllCaps="false"
+                        style="@style/textStylePoppinsregular14_2" tools:text="@string/lbl_follow"/>
+                </LinearLayout>
+                <View android:background="@color/gray_400"
+                    android:id="@+id/line2"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="@dimen/_1pxv"
+                    android:layout_marginTop="@dimen/_25pxv" android:layout_width="@dimen/_319pxh"/>
+                <LinearLayout android:id="@+id/linear8"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_24pxv"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal" style="@style/groupStyle">
+                    <ImageView android:id="@+id/image3"
+                        android:layout_gravity="center_vertical"
+                        android:layout_height="@dimen/_60pxv"
+                        android:layout_width="@dimen/_60pxh"
+                        android:scaleType="centerCrop"
+                        circular="@{true}"
+                        imageRes="@{@drawable/img_profile_picture}" tools:src="@drawable/img_profile_picture"/>
+                    <LinearLayout android:id="@+id/linear9"
+                        android:layout_gravity="center_vertical"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_15pxh"
+                        android:layout_weight="0.5"
+                        android:layout_width="0dp"
+                        android:orientation="vertical" style="@style/groupStyle">
+                        <TextView android:gravity="top|start"
+                            android:id="@+id/txtJohnDoe3"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            android:text="@{interestsPeopleVM.interestsPeopleModel.txtJohnDoe3}"
+                            style="@style/textStylePoppinssemibold16" tools:text="@string/lbl_john_doe"/>
+                        <TextView android:gravity="top|start"
+                            android:id="@+id/txtLoremIpsumIs4"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_3pxv"
+                            android:layout_width="match_parent"
+                            android:text="@{interestsPeopleVM.interestsPeopleModel.txtLoremIpsumIs4}"
+                            style="@style/textStylePoppinsregular12_1" tools:text="@string/msg_lorem_ipsum_is4"/>
+                    </LinearLayout>
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:gravity="center"
+                        android:id="@+id/btnFollow3"
+                        android:layout_gravity="top"
+                        android:layout_height="@dimen/_32pxv"
+                        android:layout_marginStart="@dimen/_11pxh"
+                        android:layout_width="@dimen/_87pxh"
+                        android:text="@string/lbl_follow"
+                        android:textAllCaps="false"
+                        style="@style/textStylePoppinsregular14_2" tools:text="@string/lbl_follow"/>
+                </LinearLayout>
+                <View android:background="@color/gray_400"
+                    android:id="@+id/line3"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="@dimen/_1pxv"
+                    android:layout_marginTop="@dimen/_25pxv" android:layout_width="@dimen/_319pxh"/>
+                <LinearLayout android:id="@+id/linear10"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_24pxv"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal" style="@style/groupStyle">
+                    <ImageView android:id="@+id/image4"
+                        android:layout_gravity="center_vertical"
+                        android:layout_height="@dimen/_60pxv"
+                        android:layout_width="@dimen/_60pxh"
+                        android:scaleType="centerCrop"
+                        circular="@{true}"
+                        imageRes="@{@drawable/img_profile_picture}" tools:src="@drawable/img_profile_picture"/>
+                    <LinearLayout android:id="@+id/linear11"
+                        android:layout_gravity="center_vertical"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_15pxh"
+                        android:layout_weight="0.5"
+                        android:layout_width="0dp"
+                        android:orientation="vertical" style="@style/groupStyle">
+                        <TextView android:gravity="top|start"
+                            android:id="@+id/txtJohnDoe4"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            android:text="@{interestsPeopleVM.interestsPeopleModel.txtJohnDoe4}"
+                            style="@style/textStylePoppinssemibold16" tools:text="@string/lbl_john_doe"/>
+                        <TextView android:gravity="top|start"
+                            android:id="@+id/txtLoremIpsumIs5"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_3pxv"
+                            android:layout_width="match_parent"
+                            android:text="@{interestsPeopleVM.interestsPeopleModel.txtLoremIpsumIs5}"
+                            style="@style/textStylePoppinsregular12_1" tools:text="@string/msg_lorem_ipsum_is5"/>
+                    </LinearLayout>
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:gravity="center"
+                        android:id="@+id/btnFollow4"
+                        android:layout_gravity="top"
+                        android:layout_height="@dimen/_32pxv"
+                        android:layout_marginStart="@dimen/_11pxh"
+                        android:layout_width="@dimen/_87pxh"
+                        android:text="@string/lbl_follow"
+                        android:textAllCaps="false"
+                        style="@style/textStylePoppinsregular14_2" tools:text="@string/lbl_follow"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</layout>
