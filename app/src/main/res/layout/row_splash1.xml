@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="splash1RowModel" type="com.livechat.app.modules.splash.data.model.Splash1RowModel"/>
+    </data>
+    <LinearLayout android:id="@+id/linear3"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:orientation="vertical" style="@style/groupStyle">
+        <View
+            android:background="@drawable/rectangle_bg_gray_400_radius_40"
+            android:id="@+id/view"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="@dimen/_80pxv" android:layout_width="@dimen/_80pxh"/>
+        <TextView android:gravity="top|center"
+            android:id="@+id/txtLoremIpsumDol"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_1pxh"
+            android:layout_marginStart="@dimen/_1pxh"
+            android:layout_marginTop="@dimen/_8pxv"
+            android:layout_width="wrap_content"
+            android:text="@{splash1RowModel.txtLoremIpsumDol}"
+            style="@style/textStylePoppinsregular12" tools:text="@string/msg_lorem_ipsum_dol"/>
+    </LinearLayout>
+</layout>

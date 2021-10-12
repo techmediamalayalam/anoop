@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="interestsTopics1RowModel" type="com.livechat.app.modules.intereststopics.data.model.InterestsTopics1RowModel"/>
+    </data>
+    <LinearLayout android:id="@+id/linear"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal" style="@style/groupStyle">
+        <ImageView android:id="@+id/image"
+            android:layout_gravity="center_vertical"
+            android:layout_height="@dimen/_40pxv"
+            android:layout_width="@dimen/_40pxh"
+            android:scaleType="centerCrop" android:src="@drawable/img_image_1"/>
+        <TextView android:gravity="top|start" android:id="@+id/txtArt"
+            android:layout_gravity="center_vertical"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_17pxh"
+            android:layout_weight="0.39" android:layout_width="0dp"
+            android:text="@{interestsTopics1RowModel.txtArt}"
+            style="@style/textStylePoppinsregular14_1" tools:text="@string/lbl_art"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:clickable="true" android:gravity="center"
+            android:id="@+id/btnFollow"
+            android:layout_gravity="center_vertical"
+            android:layout_height="@dimen/_32pxv"
+            android:layout_marginStart="@dimen/_50pxh"
+            android:layout_width="@dimen/_87pxh"
+            android:text="@string/lbl_follow"
+            android:textAllCaps="false"
+            style="@style/textStylePoppinsregular14_2" tools:text="@string/lbl_follow"/>
+    </LinearLayout>
+</layout>
